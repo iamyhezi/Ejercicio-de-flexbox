@@ -96,16 +96,15 @@
     }
     
     .tarjetas {
-        height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     .tarjeta {
-        max-width: 26rem;
-        mIN-width: 20rem;
-        margin: 2rem;
+        max-width: 24rem;
+        min-width: 24rem;
+        margin: 4rem 2rem;
         padding: 2rem;
         display: flex;
         justify-content: center;
@@ -157,6 +156,17 @@
             background-image: url(/imagenes/banner\ 4.jpeg);
         }
     }
+    
+    @media screen and (max-width: 80rem) {
+        .tarjetas {
+            flex-direction: column;
+        }
+        .tarjeta {
+            max-width: 50rem;
+            margin: 2rem;
+        }
+    }
+    /* --------------CLASE FLEXBOX--------------- */
     
     .flex-container {
         background-color: #aaa;
