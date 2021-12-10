@@ -1,219 +1,238 @@
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    
-    a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
-    }
-    /* -------------------- MENU ---------------------- */
-    
-    .main-header img {
-        position: absolute;
-        width: 6rem;
-        top: 4rem;
-        left: 4rem;
-        z-index: 2;
-    }
-    
-    .main-nav {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-    }
-    
-    .main-nav__items {
-        display: flex;
-        justify-content: end;
-        padding-right: 4rem;
-    }
-    
-    .main-nav__item {
-        padding: 1.2rem;
-        margin: 1rem 1.6rem;
-        display: inline-flex;
-    }
-    /* -------------------- BANNER ---------------------- */
-    
-    .banner {
-        position: relative;
-        width: 100vw;
-        height: 70vh;
-        background-color: #aaa;
-        background-size: cover;
-        background-position: center;
-        transition: all .4s ease-in-out;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+/* -------------------- MENU ---------------------- */
+
+.main-header img {
+    position: absolute;
+    width: 6rem;
+    top: 4rem;
+    left: 4rem;
+    z-index: 2;
+}
+
+.main-nav {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.main-nav__items {
+    display: flex;
+    justify-content: end;
+    padding-right: 4rem;
+}
+
+.main-nav__item {
+    padding: 1.2rem;
+    margin: 1rem 1.6rem;
+    display: inline-flex;
+}
+
+
+/* -------------------- BANNER ---------------------- */
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-color: #aaa;
+    background-size: cover;
+    background-position: center;
+    transition: all .4s ease-in-out;
+    background-image: url(/imagenes/banner.jpeg);
+    animation: banner 16s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-cont {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 22, 40, .6);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-cont__info {
+    max-width: 45rem;
+}
+
+.banner-cont h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.banner-cont p {
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 4rem;
+}
+
+.banner-cont__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #3088e0;
+    padding: .6rem 2rem;
+    border-radius: 50px;
+}
+
+
+/* --------------------BODY---------------------- */
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    max-width: 24rem;
+    min-width: 24rem;
+    margin: 4rem 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    background-color: #eee;
+    transition: all .2s ease-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
+    background-color: rgb(250, 250, 250);
+}
+
+.tarjeta h1 {
+    margin-bottom: 2rem;
+}
+
+.tarjeta p {
+    margin-bottom: 3rem;
+}
+
+.tarjeta-btn {
+    background-color: #3088e0;
+    text-align: center;
+    padding: .6rem 0.2rem;
+    border-radius: 50px;
+}
+
+@keyframes banner {
+    0% {
         background-image: url(/imagenes/banner.jpeg);
-        animation: banner 16s infinite linear alternate;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    
-    .banner-cont {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 22, 40, .6);
-        color: aliceblue;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    20% {
+        background-image: url(/imagenes/banner.jpeg);
     }
-    
-    .banner-cont__info {
-        max-width: 45rem;
+    25% {
+        background-image: url(/imagenes/banner\ 2.jpeg);
     }
-    
-    .banner-cont h1 {
-        text-align: center;
-        font-size: 5rem;
-        font-weight: bolder;
-        margin-bottom: 1rem;
-        letter-spacing: -1px;
+    45% {
+        background-image: url(/imagenes/banner\ 2.jpeg);
     }
-    
-    .banner-cont p {
-        margin-bottom: 2rem;
-        text-align: center;
-        line-height: 1.4;
-        padding: 0 4rem;
+    50% {
+        background-image: url(/imagenes/banner\ 3.jpeg);
     }
-    
-    .banner-cont__btn {
-        display: flex;
-        justify-content: center;
+    70% {
+        background-image: url(/imagenes/banner\ 3.jpeg);
     }
-    
-    .btn {
-        background-color: #3088e0;
-        padding: .6rem 2rem;
-        border-radius: 50px;
+    75% {
+        background-image: url(/imagenes/banner\ 4.jpeg);
     }
-    /* --------------------BODY---------------------- */
-    
+    100% {
+        background-image: url(/imagenes/banner\ 4.jpeg);
+    }
+}
+
+@media screen and (max-width: 84rem) {
     .tarjetas {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
     }
-    
     .tarjeta {
-        max-width: 24rem;
-        min-width: 24rem;
-        margin: 4rem 2rem;
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
-        border-radius: 10px;
-        background-color: #eee;
+        max-width: 48rem;
+        min-width: 46rem;
+        margin: 2rem;
     }
-    
-    .tarjeta h1 {
-        margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 54rem) {
+    .tarjetas {
+        flex-direction: column;
     }
-    
+    .tarjeta {
+        max-width: 30rem;
+        min-width: 26rem;
+        margin: 2rem;
+    }
     .tarjeta p {
-        margin-bottom: 3rem;
+        display: none;
     }
-    
-    .tarjeta-btn {
-        background-color: #3088e0;
-        text-align: center;
-        padding: .6rem 0.2rem;
-        border-radius: 50px;
+    .tarjeta-fecha,
+    .tarjeta-info {
+        display: block;
     }
-    
-    @keyframes banner {
-        0% {
-            background-image: url(/imagenes/banner.jpeg);
-        }
-        20% {
-            background-image: url(/imagenes/banner.jpeg);
-        }
-        25% {
-            background-image: url(/imagenes/banner\ 2.jpeg);
-        }
-        45% {
-            background-image: url(/imagenes/banner\ 2.jpeg);
-        }
-        50% {
-            background-image: url(/imagenes/banner\ 3.jpeg);
-        }
-        70% {
-            background-image: url(/imagenes/banner\ 3.jpeg);
-        }
-        75% {
-            background-image: url(/imagenes/banner\ 4.jpeg);
-        }
-        100% {
-            background-image: url(/imagenes/banner\ 4.jpeg);
-        }
-    }
-    
-    @media screen and (max-width: 84rem) {
-        .tarjetas {
-            flex-direction: column;
-        }
-        .tarjeta {
-            max-width: 48rem;
-            min-width: 46rem;
-            margin: 2rem;
-        }
-    }
-    
-    @media screen and (max-width: 54rem) {
-        .tarjetas {
-            flex-direction: column;
-        }
-        .tarjeta {
-            max-width: 30rem;
-            min-width: 26rem;
-            margin: 2rem;
-        }
-        .tarjeta p {
-            display: none;
-        }
-        .tarjeta-fecha,
-        .tarjeta-info {
-            display: block;
-        }
-        /* --------------CLASE FLEXBOX--------------- */
-        .flex-container {
-            background-color: #aaa;
-            height: 25rem;
-            width: 50vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* position: relative; */
-        }
-        .news-info {
-            background-color: #fa0;
-            border: dashed 3px black;
-            display: inline-block;
-            padding: 2rem;
-            /* -----------FORMA 1 CENTRAR---------- */
-            /* position: absolute;
+}
+
+
+/* --------------CLASE FLEXBOX--------------- */
+
+.flex-container {
+    background-color: #aaa;
+    height: 25rem;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.news-info {
+    background-color: #fa0;
+    border: dashed 3px black;
+    display: inline-block;
+    padding: 2rem;
+    /* -----------FORMA 1 CENTRAR---------- */
+    /* position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); */
-            /* -----------FORMA 2 CENTRAR---------- */
-            /* position: absolute;
+    /* -----------FORMA 2 CENTRAR---------- */
+    /* position: absolute;
     width: 10rem;
     height: 10rem;
     inset: 0;
     margin: auto; */
-        }
-        .segundo-div {
-            background-color: brown;
-        }
+}
+
+.segundo-div {
+    background-color: brown;
+}
