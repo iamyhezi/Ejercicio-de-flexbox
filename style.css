@@ -46,7 +46,7 @@
         background-position: center;
         transition: all .4s ease-in-out;
         background-image: url(/imagenes/banner.jpeg);
-        animation: banner 12s infinite linear alternate;
+        animation: banner 16s infinite linear alternate;
         display: flex;
         justify-content: center;
         align-items: center;
